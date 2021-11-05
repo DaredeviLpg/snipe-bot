@@ -1,0 +1,6 @@
+{
+  "token": "your bots token here", 
+  "prefix": ";",
+  "status": "Sniping messages! | {{ servercount }} servers", 
+  "support_server": "your server"
+}
