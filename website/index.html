@@ -1,0 +1,39 @@
+<!-- Made by DaredeviL -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta property=og:type content=website>
+	<meta property=og:title content="Snipe bot">
+	<meta property=og:description content="Snipe bot - a very useful bot for message sniping messages.">
+	<meta property=og:image content="{{ url_for('static', filename='snipebot.png')}}">
+	<meta name=mobile-web-app-capable content=yes>
+	<meta name=theme-color content=#62d3f5>
+	<meta name="og:site_name" content="Snipe bot">
+	<link rel="icon" href="{{ url_for('static', filename='snipebot.png')}}">
+	<title>Snipe bot</title>
+  <script src='{{ url_for('static', filename="script.js") }}'></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+<body onload="__0x5359e7()">
+  <center>
+  <div class="h">
+    <img src="{{ url_for('static', filename='logo.png')}}" width="230px" style="margin-bottom:20px;">
+  </div>
+  </center>
+  </center>
+  <center>
+    <a href='{{ value[1] }}'><button class="add-snipe-bot" type="button">Add to discord</button></a>
+    <a href='{{ value[0] }}'><button class="support-server" type="button">support server</button></a>
+  </center>
+  <center>
+    <form>
+      <input placeholder="write a review" id="review" class="rate" required> <button onclick="sendreview(document.getElementById('review').value)" class="sr">Submit</button>
+    </form>
+  </center>
+</body>
+
+</html>
